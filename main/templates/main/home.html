@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'main/images/mypic.jpeg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h2 class="font-weight-bold st-font">Hi there,</h2>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;">
+                This is <b class="text-warning">Muhammad Hassaan</b>. I have 4 years of experience in multiple technologies and programming languages including C, C++, JAVA, Python, C#. I am available 24/7 for any project. I work full time in .Net applications development and have worked in projects in ReactJS, .Net core and NodeJS.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mx-3">Hire me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+{% endblock content %}
+
